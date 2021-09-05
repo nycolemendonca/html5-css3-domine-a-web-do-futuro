@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que eu mais gosto em São Paulo</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.html">
+    <script src="prefixfree.min.js"></script>
+    <link rel="icon" href="icon.ico">
+    <style>
+        .container {
+            margin: 0 auto;
+            /*A margem superior e inferior está com 0, e as margens laterais em auto centralizam o elemento na página*/
+            width: 960px; 
+            /*Este atributo serve para fixar a largura da página em 960px, adequando o conteúdo a telas de pelo menos 1024px de largura, como tablets e notebooks*/
+        }
+        .container h1 {
+            text-align: center;
+        }
+        /*Toda a página irá herdar os estilos adicionado a tag body*/
+        body {
+            background: #FFF1D6;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            /*O line-height sem nenhuma medida específica serve para fixar a altura das linhas em 160% da altura da fonte*/
+        }
+        .place {
+            background-color: #FFF;
+            border: 1px solid #CCC;
+            border-color: #CCC #999 #CCC #999; 
+            /*Esta sequêcia segue no sentido horário top/right/bottom/left*/
+            margin-bottom: 20px; 
+            /*Coloca 20px abaixo de cada um dos elementos, adicionando espaço entre eles e o término na lista (espaçamento do lado de fora dos elementos)*/
+            padding: 10px; 
+            /*Adiciona espaçamento dentro dos elementos, que no caso é 10px em todos os lados. Apesar dos 10px de padding, o espaçamento entre a borda e o título aparenta ser mais do que isso. Isso é resultado do margin padrão do elemento h2 somado com o padding da div que encapsula.*/
+            }
+        .place h2 {
+            border-bottom: 1px dashed #7E9F19; /*Altura da linha pontilhada*/
+            margin: 0; /*Espaçamento entre o topo da caixa e o título h2*/
+            text-align: center;
+        }
+        .place a {
+            color: #2C88A7;
+            font-weight: bold;
+        }
+        h1 a {
+            color: #000000;
+            text-decoration: wavy;
+        }
+        h1 a:hover {
+            background-color: #ccc7c7;
+            color: rgb(0, 0, 0);
+        }
+        .place img {
+            border: 1px solid #7E9F19;
+            float: left;
+            margin: 10px 10px 0 0;
+            padding: 2px;
+        }
+        .clear {
+            clear: both;
+        }
+        .footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        .sidenote {
+            background-color: #FFFBE4;
+            border: 1px solid #C9BC8F;
+            float: right;
+            padding: 10px;
+            width: 260px;
+        }
+        .sidenote h3 {
+            font-size: 14px;
+            margin-top: 0;
+        }
+        .sidenote ol {
+            font-size: 12px;
+        }
+        .places {
+            float: left;
+            width: 660px;
+        }
+    </style>
+</head>
+
+<!--A div class='container' que contém o body serve para criar uma caixa ao redor de todo o conteúdo. Por isso,é importante que o <body> esteja contido nela.-->
+<div class='container'>
+<body>
+    <h1><a href="#">O que eu mais gosto em São Paulo</a></h1>
+    <div class="places"> <!--Três principais lugares-->
+        <div class='place'>
+            <h2>Passear na Avenida Paulista!</h2>
+            <img src="avenida-paulista.png" alt="Avenida Paulista" width="156px" height="156px">
+            <p>
+                Um dos principais centros financeiros da cidade, a avenida Paulista também possui diversas opções de entretenimento. Endereço do Museu de Arte de São Paulo, <em>MASP</em>, do Teatro Gazeta e muitos outros, a região é de fácil acesso graças as diversas linhas de ônibus que cruzam a avenida e a linha de metrô que passa por baixo dela.
+            </p> <!--A tag EM dá enfase na sigla.-->
+            <p>
+                A Avenida Paulista sempre é assunto. O que será que estão falando a respeito no <a href="https://twitter.com/search?q=Avenida%20Paulista" target="_blank" rel="external">Twitter</a>?
+            </p>
+            <div class="clear"></div>
+        </div>
+        <div class='place'> 
+            <!--Essa div class='place' não tem impacto nenhum no visual da página. Mas ela nos permite adicionar um estilo, já que existe um elemento específico que engloba cada lugar mencionado do texto-->
+            <h2>Os bares da Vila Madalena</h2>
+            <img src="vila-madalena.jpg" alt="Bar na Vila Madalena" width="156px" height="156px">
+            <p>
+                Depois de um dia de trabalho, nada melhor do que um bom chopp, um petisco e uma conversa em uma mesa de bar. Opções de sobra na região das ruas Aspicuelta, Fradique e Wisard.
+            </p>
+            <p>
+                Veja quais os melhores bares e restaurantes da região no <a href="https://vejasp.abril.com.br/blog/notas-etilicas/bares-novos-pinheiros-vila-madalena/" target="_blank" rel="external">Guia da VEJA São Paulo</a>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <div class='place'>
+            <h2>O Parque do Ibirapuera</h2>
+            <img src="ibirapuera.jpeg" alt="Parque do Ibirapuera" width="156px" height="156px">
+            <p>
+                Um dos cartões postais da cidade, o parque dispõe de mais de 1,5km<sup>2</sup> de área verde, lagos artificiais e pistas de cooper e ciclismo. E se isso não fosse o suficiente, o parque costuma ser palco de diversos eventos culturais ao longo do ano.
+            </p><!--A tag SUP formata adequadamente os quilômetros quadrados.-->
+            <p>
+                Veja no <a href="https://goo.gl/maps/K5wtWk43y4T814MN8" target="_blank" rel="external">mapa</a> como chegar ao parque.
+            </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+<div class="sidenote"> <!--Barra laterais com os demais lugares-->
+    <h3>Existem muitos outros lugares interessantes na cidade...</h3>
+    <ul>
+        <li>O Mercado Municipal</li>
+        <li>A Sala de São Paulo</li>
+        <li>Os estádios dos principais times de futebol da cidade.</li>
+        <li>Diversos museus, como o Memorial da América Latina, Museu da Língua Portuguesa e o Museu do Ipiranga.</li>
+        <li>E mais!</li>
+    </ul>
+</div>
+<div class="footer clear"> <!--Rodapé-->
+    <p><strong>Parte do livro "HTML5 e CSS3: Domine a web do futuro."</strong></p>
+</div>
+</div> <!--Fim do elemento container-->
+
+</html>
