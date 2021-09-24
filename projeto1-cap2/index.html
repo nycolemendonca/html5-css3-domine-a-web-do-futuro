@@ -12,33 +12,26 @@
     <style>
         .container {
             margin: 0 auto;
-            /*A margem superior e inferior está com 0, e as margens laterais em auto centralizam o elemento na página*/
             width: 960px; 
-            /*Este atributo serve para fixar a largura da página em 960px, adequando o conteúdo a telas de pelo menos 1024px de largura, como tablets e notebooks*/
         }
         .container h1 {
             text-align: center;
         }
-        /*Toda a página irá herdar os estilos adicionado a tag body*/
         body {
             background: #FFF1D6;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            /*O line-height sem nenhuma medida específica serve para fixar a altura das linhas em 160% da altura da fonte*/
         }
         .place {
             background-color: #FFF;
             border: 1px solid #CCC;
             border-color: #CCC #999 #CCC #999; 
-            /*Esta sequêcia segue no sentido horário top/right/bottom/left*/
             margin-bottom: 20px; 
-            /*Coloca 20px abaixo de cada um dos elementos, adicionando espaço entre eles e o término na lista (espaçamento do lado de fora dos elementos)*/
             padding: 10px; 
-            /*Adiciona espaçamento dentro dos elementos, que no caso é 10px em todos os lados. Apesar dos 10px de padding, o espaçamento entre a borda e o título aparenta ser mais do que isso. Isso é resultado do margin padrão do elemento h2 somado com o padding da div que encapsula.*/
             }
         .place h2 {
-            border-bottom: 1px dashed #7E9F19; /*Altura da linha pontilhada*/
-            margin: 0; /*Espaçamento entre o topo da caixa e o título h2*/
+            border-bottom: 1px dashed #7E9F19;
+            margin: 0;
             text-align: center;
         }
         .place a {
@@ -94,7 +87,7 @@
     <div class="places"> <!--Três principais lugares-->
         <div class='place'>
             <h2>Passear na Avenida Paulista!</h2>
-            <img src="avenida-paulista.png" alt="Avenida Paulista" width="156px" height="156px">
+            <img src="img/avenida-paulista.png" alt="Avenida Paulista" width="156px" height="156px">
             <p>
                 Um dos principais centros financeiros da cidade, a avenida Paulista também possui diversas opções de entretenimento. Endereço do Museu de Arte de São Paulo, <em>MASP</em>, do Teatro Gazeta e muitos outros, a região é de fácil acesso graças as diversas linhas de ônibus que cruzam a avenida e a linha de metrô que passa por baixo dela.
             </p> <!--A tag EM dá enfase na sigla.-->
@@ -106,7 +99,7 @@
         <div class='place'> 
             <!--Essa div class='place' não tem impacto nenhum no visual da página. Mas ela nos permite adicionar um estilo, já que existe um elemento específico que engloba cada lugar mencionado do texto-->
             <h2>Os bares da Vila Madalena</h2>
-            <img src="vila-madalena.jpg" alt="Bar na Vila Madalena" width="156px" height="156px">
+            <img src="img/" alt="Bar na Vila Madalena" width="156px" height="156px">
             <p>
                 Depois de um dia de trabalho, nada melhor do que um bom chopp, um petisco e uma conversa em uma mesa de bar. Opções de sobra na região das ruas Aspicuelta, Fradique e Wisard.
             </p>
@@ -117,7 +110,7 @@
         </div>
         <div class='place'>
             <h2>O Parque do Ibirapuera</h2>
-            <img src="ibirapuera.jpeg" alt="Parque do Ibirapuera" width="156px" height="156px">
+            <img src="img/ibirapuera.jpeg" alt="Parque do Ibirapuera" width="156px" height="156px">
             <p>
                 Um dos cartões postais da cidade, o parque dispõe de mais de 1,5km<sup>2</sup> de área verde, lagos artificiais e pistas de cooper e ciclismo. E se isso não fosse o suficiente, o parque costuma ser palco de diversos eventos culturais ao longo do ano.
             </p><!--A tag SUP formata adequadamente os quilômetros quadrados.-->
