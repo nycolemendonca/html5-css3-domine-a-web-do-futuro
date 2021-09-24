@@ -10,57 +10,50 @@
     <script src="prefixfree.min.js"></script>
     <link rel="icon" href="icon.ico">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
         .container {
             margin: 0 auto;
-            width: 960px; 
+            width: 960px;
         }
         .container h1 {
             text-align: center;
         }
         body {
-            background: #FFF1D6;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-repeat: no-repeat;
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+            font-family: 'Roboto';
             line-height: 1.6;
         }
         .place {
-            background-color: #FFF;
+            background-color: rgb(241, 233, 233);
             border: 1px solid #CCC;
             border-color: #CCC #999 #CCC #999; 
             margin-bottom: 20px; 
             padding: 10px; 
             }
         .place h2 {
-            border-bottom: 1px dashed #7E9F19;
+            border-bottom: 1px dashed rgb(221, 136, 200);
             margin: 0;
             text-align: center;
         }
         .place a {
-            color: #2C88A7;
+            text-decoration: none;
             font-weight: bold;
+            color: mediumvioletred;
         }
         h1 a {
             color: #000000;
-            text-decoration: wavy;
-        }
-        h1 a:hover {
-            background-color: #ccc7c7;
-            color: rgb(0, 0, 0);
+            text-decoration: none;
         }
         .place img {
-            border: 1px solid #7E9F19;
+            border: 1px solid mediumvioletred;
             float: left;
             margin: 10px 10px 0 0;
             padding: 2px;
         }
-        .clear {
-            clear: both;
-        }
-        .footer {
-            font-size: 12px;
-            text-align: center;
-        }
+        
         .sidenote {
-            background-color: #FFFBE4;
+            background-color: rgb(241, 233, 233);
             border: 1px solid #C9BC8F;
             float: right;
             padding: 10px;
@@ -76,6 +69,10 @@
         .places {
             float: left;
             width: 660px;
+        }
+        strong {
+            font-size: 12px;
+            text-align: end;
         }
     </style>
 </head>
@@ -99,7 +96,7 @@
         <div class='place'> 
             <!--Essa div class='place' não tem impacto nenhum no visual da página. Mas ela nos permite adicionar um estilo, já que existe um elemento específico que engloba cada lugar mencionado do texto-->
             <h2>Os bares da Vila Madalena</h2>
-            <img src="img/" alt="Bar na Vila Madalena" width="156px" height="156px">
+            <img src="img/avenida-paulista.png" alt="Bar na Vila Madalena" width="156px" height="156px">
             <p>
                 Depois de um dia de trabalho, nada melhor do que um bom chopp, um petisco e uma conversa em uma mesa de bar. Opções de sobra na região das ruas Aspicuelta, Fradique e Wisard.
             </p>
